@@ -2,13 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-y: hidden;
+}
+.body-wrapper {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
 }
 .nav-board {
   display: block;
-  width: 20%;
+  width: 100%;
   height: 100vh;
   background: rgb(42, 106, 254);
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  overflow-y: hidden;
 }
 .logo {
   display: inline-block;
@@ -18,36 +24,87 @@
 .logo a {
   margin-left: 30px;
   width: 100%;
-  font-size: 2em;
+  font-size: 30px;
   text-decoration: none;
   color: white;
 }
 .logo i {
   margin-right: 10px;
+  font-size: 21px;
 }
 .navigation ul {
   display: block;
 }
 .navigation ul li {
-  display: flex;
-  position: relative;
-  margin: 20px 10px;
+  text-decoration: none;
+  list-style: none;
   width: auto;
+  height: auto;
+  position: relative;
+  margin-top: 15px;
+  margin-left: 40px;
+  margin-bottom: 15px;
+  padding: 10px;
 }
-.navigation ul li:nth-last-child() {
+.navigation ul li i {
+  margin-right: 10px;
+}
+.navigation ul li:nth-child(7) {
   position: absolute;
+  bottom: 0;
 }
 .navigation ul li a {
+  width: 130px;
+  position: relative;
   color: white;
   text-decoration: none;
   margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
   transition: 0.5s ease-in-out;
-  border: 1px solid red;
 }
-.navigation ul li a:hover {
+.navigation ul li a:hover:not(:nth-child(7)) {
   background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 50px;
 }
-.navigation i {
-  margin-right: 50px;
+.navigation .fa {
+  position: relative;
+  top: 2px;
+  margin-right: 20px;
+  padding-top: 5px;
+}
+.homepage {
+  width: 110%;
+  margin-left: -10%;
+  padding-left: 20%;
+  padding-right: 10%;
+  overflow-y: overlay;
+}
+.top-search {
+  width: 25%;
+  display: inline-block;
+  position: absolute;
+  top: 5%;
+}
+.top-search input {
+  width: 100%;
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.top-label {
+  display: inline-block;
+  position: absolute;
+  top: 5%;
+  left: 65%;
+}
+.top-label span {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: -10px;
+}
+.top-label a {
+  position: relative;
+  top: 2px;
+  margin-left: 20px;
+  font-size: 15px;
 }
