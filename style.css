@@ -73,10 +73,11 @@
   padding-top: 5px;
 }
 .homepage {
-  width: 110%;
+  display: block;
+  width: 100%;
   margin-left: -10%;
   padding-left: 20%;
-  padding-right: 10%;
+  padding-right: 5%;
   overflow-y: overlay;
 }
 .top-search {
@@ -95,7 +96,7 @@
   display: inline-block;
   position: absolute;
   top: 5%;
-  left: 65%;
+  left: 75%;
 }
 .top-label span {
   font-size: 20px;
@@ -107,4 +108,78 @@
   top: 2px;
   margin-left: 20px;
   font-size: 15px;
+}
+.top-category {
+  width: 70%;
+  display: block;
+  position: absolute;
+  top: 15%;
+  left: 28%;
+}
+.top-category h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.top-category-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.top-category-links a {
+  text-decoration: none;
+  color: rgb(232, 232, 232);
+  width: 90%;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 40px;
+  background: rgba(42, 106, 254, 0.9);
+  border-radius: 20px;
+}
+.category-link1 img {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  top: 60%;
+  left: 23%;
+  transform: rotate(180deg);
+}
+.category-link2 img {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  top: 60%;
+  left: 57%;
+}
+.category-link3 img {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  top: 60%;
+  left: 90%;
+}
+.items {
+  width: 68%;
+  display: block;
+  position: absolute;
+  top: 40%;
+}
+.items h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.item-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2%;
+}
+.item-icons a {
+  background: rgb(194, 230, 255);
+  border-radius: 10px;
+}
+.item-icons img {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  margin-left: 40%;
+  width: 70px;
+  height: 70px;
 }
